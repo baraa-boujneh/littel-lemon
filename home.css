@@ -1,0 +1,131 @@
+body{
+margin: 0 10% 0 10%;
+font-family: 'Makazi Text', serif;
+background-color: aliceblue;
+}
+
+
+
+#logo{
+width:50%;
+margin-left:25%;
+padding-bottom:1%;
+
+}
+
+nav > ul {
+    list-style: none;
+    text-align: center;
+    background-color: #728f7c;
+    border-radius: 1rem;
+
+}
+nav li {
+    display: inline-block;
+    font-size:1.5rem ;
+    padding:1rem ;
+}
+li > a {
+    color: #fff;
+    text-decoration: none;
+   
+}
+h1{
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    padding: 2%;
+    margin: 2%;
+    flex:1;
+    text-align: center;
+   
+  
+}
+
+.cover {
+    position: relative; 
+    height:150%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('asset/food2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:1.4rem ;
+    
+
+}
+
+.cover::before {    
+    content: "";
+    position: absolute;
+    border-radius:1.4rem ;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+   background-color: rgba(0,0,0,0.4);
+}
+.text{
+    position: relative;
+    color: #ffffff;  
+    text-align: center;
+    line-height: 0.9;
+    font-size: 2rem;
+
+}
+
+
+section:nth-child(2) article{
+  background-color: #f1f0d9;
+  border-radius: 1rem;;
+}
+
+article > img {
+width: 100%; 
+height: auto;
+
+}
+footer {
+    position: relative;
+}
+
+footer img {
+    height: 100px;
+    width: 50;
+}
+footer img:hover {
+    animation: rotateAnimation 3s infinite ;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+footer > div{
+    
+    display: inline-block;
+   
+   
+}
+#copy-right{
+    width: 20%;
+    position: absolute;
+    text-align: right;
+    right: 10px;
+    bottom: 0;
+    padding-bottom: 2px;
+}
